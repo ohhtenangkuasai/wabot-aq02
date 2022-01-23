@@ -1,7 +1,7 @@
 {
   "name": "wabot-aq",
   "version": "2.5.1",
-  "description": "Bawa Hidupmu Lebih Berwarna",
+  "description": "Buat Hidupmu Lebih Berwarna",
   "depecrated": false,
   "main": "index.js",
   "directories": {
@@ -10,8 +10,11 @@
     "plugins": "plugins"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "nodemon -x node index.js || touch index.js",
     "test": "node test.js"
+  },
+  "nodemonConfig": {
+    "ext": "js,html,sh"
   },
   "keywords": [
     "termux-whatsapp-bot",
@@ -32,12 +35,13 @@
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "@adiwajshing/baileys": "github:adiwajshing/baileys",
+    "@adiwajshing/baileys": "github:melcanz/baileys",
     "awesome-phonenumber": "^2.54.0",
     "brainly-scraper-v2": "^2.0.4-1",
     "cfonts": "^2.9.3",
     "chalk": "^4.1.1",
     "cheerio": "^1.0.0-rc.5",
+    "colors": "1.4.0",
     "express": "^4.17.1",
     "file-type": "^16.5.2",
     "form-data": "^4.0.0",
@@ -52,6 +56,8 @@
     "node-fetch": "^2.6.1",
     "node-gtts": "^2.0.2",
     "node-webpmux": "^3.1.0",
+    "nodemon": "^2.0.13",
+    "mongoose": "^6.0.11",
     "qrcode": "^1.4.4",
     "qrcode-terminal": "^0.12.0",
     "similarity": "^1.2.1",
