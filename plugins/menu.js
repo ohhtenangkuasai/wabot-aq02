@@ -34,7 +34,7 @@ const defaultMenu = {
 ┊
 ║ ┅ ๑————————————๑
 ║┊
-║┊   _*⌬ Bintang-bot Menu!*_
+║┊   _*⌬ Luxury Bot Menu!*_
 ║┊
 ║┊ ⍚ *Name:* %name
 ║┊ ⍚ *Level:* %level (%exp / %maxexp)
@@ -57,14 +57,14 @@ const defaultMenu = {
 ║┊ ➥ _Nurutomo_
 ║┊ ➥ _Bintangp02_
 ║┊ ➥ _Unx21_
-║┊ ➥ _Dan Kawan-kawan_
+║┊ ➥ _Julian09_
 ╰═ ┅ ═══════
 `.trimStart(),
   header: '╭═══ *〘 %category 〙*\n║ ┅ ๑————————————๑',
   body: '║┊ ⌲  _%cmd_ %islimit %isPremium',
   footer: '╰═ ┅ ═══════\n',
   after: `
-*%npmname@^%version*
+*LuxuryBotWangsaf@^%version*
 ${'```%npmdesc```'}
 `,
 }
