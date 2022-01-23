@@ -20,4 +20,6 @@ handler.tags = ['tools']
 
 handler.command = /^caripesan/i
 
+handler.premium = true
+
 module.exports = handler
